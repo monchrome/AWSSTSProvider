@@ -1,5 +1,5 @@
 # AWS STS Provider 
-Depicts STS interaction via vault client using dynamic policy generation for STS federation token. Note can be easily extended to obtain STS tokens with assumeRole token requests. 
+Depicts AWS STS interaction via vault client using dynamic policy generation for AWS STS federation token by generating resource based policies dynamically. Note can be easily extended to obtain STS tokens for assumeRole requests. 
 
 Say if your company provides an AI platform as a service. Say this AI platform, consists of many microservices. Say customer's data is stored on AWS S3 store, which can be accessed by various microservices (within your AI platform), as part of their day to day functioning. Such AI platforms can have the requirement of isolation of data access 
 across each request, across tenant, across AI features/products/applications supported by platform. These microservices should be able to access data in AWS s3 store as per incoming requests from individual users/tenants. Cross contamination ( either for read/write operations) should not be possible as a general security requirement.
