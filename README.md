@@ -59,3 +59,4 @@ Owing to various scenarios cited above, Velocity template policies can be create
     ]
     }
     
+Note configuring vault for your application (spring boot or otherwise) is not depicted in this repo. 
