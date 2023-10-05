@@ -1,0 +1,21 @@
+#set ($allowedService = "SomeServiceName")
+#if ($principal && ${principal.toLowerCase()} != ${allowedService.toLowerCase()})
+## Note any customException  handlers have to be passed in to velocity context
+#set ($msg = "${principal} is not authorized to use this policy.")
+    $customExceptionHandler.throwCustomException(${msg})
+#end
+#if (!$userId)
+    #set ($msg = "UserId is not specified.")
+    $templateTaskHandler.logCustomException(${msg})
+#end
+{
+"Effect": "Allow",
+"Action": [
+"s3:ListBucket",
+"s3:GetObject",
+"s3:DeleteObject"
+],
+"Resource": [
+"arn:aws:s3:::${service_name}/${userId}/${notebooking_bucket}"
+]
+}
