@@ -1,4 +1,4 @@
-# VaultSTSInteraction
+# AWS STS Provider 
 Depicts STS interaction via vault client using dynamic policy generation for STS federation token. Note can be easily extended to obtain STS tokens with assumeRole token requests. 
 
 Say if your company provides an AI platform as a service. Say this AI platform, consists of many microservices. Say customer's data is stored on AWS S3 store, which can be accessed by various microservices (within your AI platform), as part of their day to day functioning. Such AI platforms can have the requirement of isolation of data access 
