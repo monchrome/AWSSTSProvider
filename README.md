@@ -65,6 +65,9 @@ generating STS policies based on request params. Hence tenant context and applic
 The code gives an example of a backend interface that can be plugged into any spring boot / java based application. Actual Vault configuration is not depicted in the code.
 
 AWSSTSProvider/src/api/AWSStsTokenProvider.java ==>  Interface Definition for acquiring STS Tokens
+
 AWSSTSProvider/src/api/AWSStsTokenProviderImpl ==> Implementation of getSTSToken method 
+
 AWSSTSProvider/src/data/ ==> Data model  
+
 AWSSTSProvider/tree/main/src/vault ==> Custom vault client
