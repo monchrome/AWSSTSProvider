@@ -1,6 +1,10 @@
 package data;
 
 import java.util.Map;
+
+/* Class representing STS policy template name and parameters to be used to generate the
+   final policy instance from the template.
+ */
 public class PolicyParameters {
     private String policyName;
     private Map<String, Object> parameters;

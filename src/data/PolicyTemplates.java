@@ -2,6 +2,8 @@ package data;
 
 import exceptions.PolicyTemplateNotFoundException;
 
+/* Enum class to represent policy templates  */
+
 public enum PolicyTemplates {
     ServiceUserTemplate("ServiceUserTemplate", "./exampleTemplates/ServiceUserTemplate.vm"),
     TenantAppTemplate("TenantAppTemplate", "./exampleTemplates/TenantAppTemplate.vm");

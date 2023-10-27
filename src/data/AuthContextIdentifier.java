@@ -1,5 +1,6 @@
 package data;
 
+/* Class defining constants to be used for verifying JWT token based context properties */
 public final class AuthContextIdentifier {
    public static final String TENANT_ID_IDENTIFIER = "tenantId";
    public static final String USER_ID_IDENTIFIER = "userId";

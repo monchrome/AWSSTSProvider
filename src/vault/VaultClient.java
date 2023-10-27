@@ -8,6 +8,10 @@ import org.springframework.vault.support.VaultResponse;
 import java.util.HashMap;
 import java.util.Map;
 
+/* Custom VaultLCient to interect with Vault service. The Vault Service acts a proxy between your application
+  and AWS Secure Token Service. Actual Vault Configuration and hooking that up in your application startup
+  is not depicted here.
+ */
 public class VaultClient {
     public static final String AWS_PATH_FOR_ROLE = "aws-sts/roles/";
     public static final String AWS_PATH_FOR_TOKENS = "aws-sts/sts/";

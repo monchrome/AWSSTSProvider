@@ -1,5 +1,8 @@
 package data;
 
+/* Class representing STS policy injectable claims. Note these auth claims should be provided via
+ your auth token (JWT/federated identity tokens)
+ */
 public class InjectableAuthContextParams {
     String tenantIdFromJwt;
     String userIdFromJwt;
